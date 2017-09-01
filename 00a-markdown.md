@@ -126,6 +126,8 @@ Block code that is non-specific:
 ```
 $ git status
 $ git remote -v
+
+$ ps awx | grep mongo
 ```
 
 Block code that is **bash**-specific:  
