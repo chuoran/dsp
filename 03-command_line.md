@@ -45,7 +45,16 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+
+  ls: list folders and files in the current directory
+  ls -a: list all folders and files in current directory, including hidden files starting with .
+  ls -l: list in long format, with details of file mode, number of links, owner name, bytes in the file, date and time the file was last modified, etc.
+  ls -lh: list in long format, with unit suffixes.
+  ls -lah: list all files/folders, including hidden ones, in long format, with unit suffixes.
+  ls -t: list and sort by time modified, with most recent ones first.
+  ls -Glp: list in colored format, long format, and adding a "/" after folders
+
 
 ---
 
@@ -53,7 +62,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -a
+    ls -R
+    ls -G
+    ls -u
+    ls -t
 
 ---
 
@@ -61,7 +74,12 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs will supply a list of argument to a command (utility?) one by one, so the command could be executed multiple times, each time with one argument from the xargs. It's like looping through the arguments and perform the utility on each one.
 
+The following example copies all python script files in the DataScience folder to another folder
+
+```bash
+find ~/DataScience/ -iname "*.py" -print |xargs -I {} cp {} ~/DataScience/Metis/PyFiles/
+```
  
 
