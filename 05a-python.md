@@ -23,7 +23,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> They are both a collection of values, which could be of many types. But sets are unordered and can't have duplicates, while list are sequenced, indexed(ordered) and can have duplicates.
 
-    set example: 
+>> set example: 
 
     ```python
     a = {'shaklhsdiadfak'}
@@ -40,7 +40,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
     ```
 
-   Set finds elements faster, because when it is assigned, it uses hash table and when searched, it only needs to go to the assigned location to see if the element exists, rather than in list, the whole sequence needs to be searched.
+>> Set finds elements faster, because when it is assigned, it uses hash table and when searched, it only needs to go to the assigned location to see if the element exists, rather than in list, the whole sequence needs to be searched.
 
 ---
 
